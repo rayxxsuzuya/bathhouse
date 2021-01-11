@@ -820,6 +820,7 @@ body {
   padding: 131px 15px 0;
   background: url(../img/features-bg.png) no-repeat center/cover;
   position: relative;
+  overflow: hidden;
 }
 
 .features:before {
@@ -1898,6 +1899,10 @@ body {
     font-size: 16px;
     min-width: auto;
   }
+
+  .features__tree-one {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2048,6 +2053,68 @@ body {
   .stats__block {
     padding-bottom: 450px;
   }
+
+  .features {
+    padding-top: 57px;
+  }
+
+  .features__tree-one {
+    display: block;
+  }
+
+  .features__tree-one:before {
+    top: -94px;
+    right: 582px;
+  }
+
+  .features__tree-two:before {
+    top: -609px;
+    z-index: 5;
+  }
+
+  .features__tree-three:before {
+    top: -1374px;
+    z-index: 5;
+  }
+
+  .features__title {
+    font-size: 22px;
+    line-height: 57px;
+    position: relative;
+    z-index: 30;
+    margin-bottom: 51px;
+  }
+
+  .features__block {
+    margin: 0 -18px;
+  }
+
+  .features__item {
+    width: calc(100% / 2 - 36px);
+    padding: 32px 13px 32px 38px;
+    min-height: 371px;
+    margin: 0 18px 31px;
+  }
+
+  .features__item:nth-child(1) {
+    position: relative;
+    z-index: 10;
+  }
+
+  .features__item:nth-child(4) {
+    position: relative;
+    z-index: 20;
+  }
+
+  .features__item:nth-child(5) {
+    position: relative;
+    z-index: 20;
+  }
+
+  .features__item:nth-child(7) {
+    position: relative;
+    z-index: 4;
+  }
 }
 
 @media (max-width: 790px) {
@@ -2137,6 +2204,45 @@ body {
     padding: 15px 22px 16px 23px;
     background: #96C12A;
     border-radius: 30px;
+  }
+
+  .features {
+    padding: 0 26px 0 23px;
+  }
+
+  .features__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .features__block {
+    margin: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .features__item {
+    width: 100%;
+    max-width: 326px;
+    margin: 0 0 19px;
+    min-height: 302px;
+  }
+
+  .features__tree-one {
+    display: none;
+  }
+
+  .features__tree-two:before {
+    top: -1824px;
+    left: 19px;
+    z-index: 3;
+  }
+
+  .features__tree-three:before {
+    top: -2659px;
+    right: 31px;
+    z-index: 5;
   }
 }
 
@@ -2317,5 +2423,9 @@ body {
     line-height: 18px;
     position: relative;
     top: 5px;
+  }
+
+  .features {
+    padding-top: 40px;
   }
 }
