@@ -38,3 +38,17 @@ menuBtn.addEventListener('click', function() {
   menuLine.forEach((item) => item.classList.toggle('active'));
   mobileNav.classList.toggle('active');
 });
+
+
+let calcButton = document.querySelector('.header__calc-btn');
+let paymentModal = document.querySelector('.payment-modal');
+let paymentClose = document.querySelector('.payment-modal__close');
+
+calcButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  paymentModal.classList.add('active');
+});
+
+paymentClose.addEventListener('click', function() {
+  paymentModal.classList.remove('active');
+});
